@@ -1,0 +1,84 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+.label{
+    padding: 0.3rem 0 0.3rem 0;
+    width: 15%;
+    position: relative;
+    left: 5%;
+    transition: all 0.2s ease;
+}
+select{
+    padding: 0.3rem 0.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 30%;
+    /* border: 2px solid red; */
+}
+button{
+    background-color:rgb(202, 214, 230);
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1.4rem;
+    border-radius: 10px;
+    border: 0;
+    transition: all 0.2s ease;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+button.pause{
+    width: 18%;
+    background-color:green;
+    color: white;
+    border-radius: 0;
+    border: 0;
+    padding: 0.5rem 1.6rem;
+    transition: all 0.2s ease;
+     /* border: 2px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.clock{
+    /* width: 25%; */
+    background-color: black;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+button.start{
+    width:18%;
+    background-color: red;
+    color: white;
+    border-radius: 0;
+    border: 0;
+    padding: 0.5rem 1.6rem;
+    transition: all 0.2s ease;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+@media screen and (max-width:768px) {
+    .label{
+        left: 3%;
+    }
+}
+@media screen and (max-width:500px) {
+    .label{
+        display: none;
+    }
+    .clock{
+        font-size: 1rem;
+    }
+    button{
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    button.pause,button.start{
+        padding: 0.5rem;
+        text-align: center;
+    }
+}
